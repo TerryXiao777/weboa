@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.c {
+    clear: both;
+}
+
+.STYLE1 {font-size: 12px}
+.STYLE3 {font-size: 12px; font-weight: bold; }
+.STYLE4 {
+	color: #03515d;
+	font-size: 12px;
+}
+.STYLE5 {
+	color:#FF0000;
+	font-size:14px;
+	font-weight:bold;
+}
+.STYLE6{
+	background-color:#e8f3fd;
+	font-size: 12px;
+	padding-left: 20px;
+}
+
+.STYLE7{
+	color:#FF0000;
+	font-size:12px;
+}
+
+.div_img1{
+	margin-top:50px;
+	text-align: center;
+}
+
+.a1:link,.a1:visited{
+    color:#333;
+    text-decoration:none;
+}
+
+.a1:hover,.a1:active{
+    color:#FF0000;
+    text-decoration:underline;
+}
+
+.success { 
+	background:url(../images/success.png) no-repeat;
+	height:26px; 
+	line-height:26px; 
+	padding:0 0 0 25px; 
+	float:left; 
+	margin: 0;
+}
+.error{
+	background:url(../images/failure.png) no-repeat;
+	height:26px; 
+	line-height:26px; 
+	border:solid 1px #ff8080;
+	background-position:1px 1px; 
+	background-color:#fff2f2; 
+	font-size:12px; 
+	color:#4d4d4d; 
+	padding:0 0 0 25px; 
+	float:left; 
+	margin: 0;
+	position: absolute;
+}
+
+.p_succ{
+	background:url(../images/big_success.png) no-repeat;
+	height:60px;
+	padding-left:60px;
+	margin:0 auto;
+	color:#333; 
+	line-height:60px; 
+	font-size:18px;
+	text-align: center;
+	width: 240px;
+}
+
+.p_succ_div {
+	
+	height:50px; 
+	padding-top:5px;
+	
+	text-align:center;
+	font-size:18px;
+}
+
+.img_succ {
+	vertical-align:middle;
+}
+
+
+
