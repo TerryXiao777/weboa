@@ -36,7 +36,7 @@ public class UserManagerImpl extends AbstractManager implements UserManager{
 	}
 
 	@Override
-	public void delUser(int userId) {
+	public void deleteUser(int userId) {
 		getHibernateTemplate().delete(findUser(userId));
 	}
 
@@ -69,7 +69,7 @@ public class UserManagerImpl extends AbstractManager implements UserManager{
 	}
 
 	@Override
-	public void delUserRole(int userId, int roleId) {
+	public void deleteUserRole(int userId, int roleId) {
 		getHibernateTemplate().delete(findUsersRoles(userId, roleId));
 	}
 

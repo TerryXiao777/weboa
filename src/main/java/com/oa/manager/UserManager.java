@@ -22,7 +22,7 @@ public interface UserManager {
 	 * 删除用户信息
 	 * @param userId
 	 */
-	public void delUser(int userId);
+	public void deleteUser(int userId);
 	/**
 	 * 查找用户信息
 	 * @param userId
@@ -48,7 +48,7 @@ public interface UserManager {
 	 * @param userId
 	 * @param roleId
 	 */
-	public void delUserRole(int userId,int roleId);
+	public void deleteUserRole(int userId,int roleId);
 	
 	/**
 	 * 搜索某个用户所拥有的角色列表

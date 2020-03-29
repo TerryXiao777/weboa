@@ -8,7 +8,7 @@
     </id>
     <property name="username" not-null="true" unique="true"/>
     <property name="password" not-null="true"/>
-    <property name="createTime"/>
+    <property name="createTime" update="false"/>
     <property name="expireTime"/>
     <many-to-one unique="true" name="person"/>
   </class>

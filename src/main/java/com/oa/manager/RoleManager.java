@@ -13,7 +13,7 @@ public interface RoleManager {
 	 * 删除角色
 	 * @param roleId
 	 */
-	public void delRole(int roleId);
+	public void deleteRole(int roleId);
 	/**
 	 * 更新角色
 	 * @param role

@@ -155,7 +155,8 @@ a:active { text-decoration: none;}
 	                          <table width="95%" border="0" cellspacing="0" cellpadding="0">
 	                              <tr>
 	                                <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'">
-	                                	<span class="STYLE3">角色管理</span>
+	                                	<a href="#" onclick="getIframe('role.do?method=roleList');">
+	                                	<span class="STYLE3">角色管理</span></a>
 	                                </td>
 	                              </tr>
 	                          </table>
@@ -168,7 +169,8 @@ a:active { text-decoration: none;}
 	                          <table width="95%" border="0" cellspacing="0" cellpadding="0">
 	                              <tr>
 	                                <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'">
-	                                	<span class="STYLE3">用户管理</span>
+	                                	<a href="#" onclick="getIframe('user.do?method=userList');">
+	                                	<span class="STYLE3">用户管理</span></a>
 	                                </td>
 	                              </tr>
 	                          </table>

@@ -21,7 +21,7 @@ public interface AclManager {
 	 * @param principalId
 	 * @param moduleId
 	 */
-	public void delPermission(String principalType,int principalId,int moduleId);
+	public void deletePermission(String principalType,int principalId,int moduleId);
 	
 	/**
 	 * 设置aclTriState的值

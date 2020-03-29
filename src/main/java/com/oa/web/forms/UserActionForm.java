@@ -2,10 +2,17 @@ package com.oa.web.forms;
 
 import java.util.Date;
 
+import org.apache.commons.beanutils.ConvertUtils;
 import org.apache.struts.action.ActionForm;
+
+import com.oa.converter.DateConverter;
 
 public class UserActionForm extends ActionForm{
 	private static final long serialVersionUID = 4865768286656280050L;
+	
+	static{
+        ConvertUtils.register(new DateConverter(), Date.class);
+    }
 
 	private int id;
 	/**
@@ -26,6 +33,8 @@ public class UserActionForm extends ActionForm{
 	
 	//此字段用户给用户分配角色时：优先级
 	private int orderNo;
+	
+	private String skipUrl;
 
 	public Date getCreateTime() {
 		return createTime;
@@ -89,5 +98,13 @@ public class UserActionForm extends ActionForm{
 
 	public void setOrderNo(int orderNo) {
 		this.orderNo = orderNo;
+	}
+	
+	public String getSkipUrl() {
+		return skipUrl;
+	}
+
+	public void setSkipUrl(String skipUrl) {
+		this.skipUrl = skipUrl;
 	}
 }

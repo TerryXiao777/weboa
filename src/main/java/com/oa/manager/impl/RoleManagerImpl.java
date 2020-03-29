@@ -12,7 +12,7 @@ public class RoleManagerImpl extends AbstractManager implements RoleManager{
 	}
 
 	@Override
-	public void delRole(int roleId) {
+	public void deleteRole(int roleId) {
 		getHibernateTemplate().delete(findRole(roleId));
 	}
 

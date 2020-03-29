@@ -9,6 +9,8 @@ public class RoleActionForm extends ActionForm{
 	private int id;
 	
 	private String name;
+	
+	private String skipUrl;
 
 	public int getId() {
 		return id;
@@ -25,4 +27,14 @@ public class RoleActionForm extends ActionForm{
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+
+	public String getSkipUrl() {
+		return skipUrl;
+	}
+
+	public void setSkipUrl(String skipUrl) {
+		this.skipUrl = skipUrl;
+	}
+
 }

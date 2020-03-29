@@ -98,8 +98,8 @@
 			scope="request"
 			parameter="method"
 		>
-			<forward name="index" path="/role/index.jsp"></forward>
-			<forward name="add_input" path="/role/add_input.jsp"/>
+			<forward name="role_list" path="/jsp/role/role_list.jsp"></forward>
+			<forward name="add_input" path="/jsp/role/add_input.jsp"/>
 		</action>
 		
 		<action 
@@ -109,11 +109,11 @@
 			scope="request"
 			parameter="method"
 		>
-			<forward name="index" path="/user/index.jsp"></forward>
-			<forward name="add_input" path="/user/add_input.jsp"/>
-			<forward name="update_input" path="/user/update_input.jsp"/>
-			<forward name="user_role_list" path="/user/user_role_list.jsp"/>
-			<forward name="user_role_input" path="/user/user_role_input.jsp"/>
+			<forward name="user_list" path="/jsp/user/user_list.jsp"></forward>
+			<forward name="add_input" path="/jsp/user/add_input.jsp"/>
+			<forward name="update_input" path="/jsp/user/update_input.jsp"/>
+			<forward name="user_role_list" path="/jsp/user/user_role_list.jsp"/>
+			<forward name="user_role_input" path="/jsp/user/user_role_input.jsp"/>
 		</action>
 		
 		<action 
