@@ -17,6 +17,7 @@ String path = request.getContextPath();
 <script type="text/javascript" src="<%=path%>/layer/layer.js"></script>
 
 <script type="text/javascript" src="<%=path%>/js/common.js"></script>
+<script type="text/javascript" src="<%=path%>/js/role/role_list.js"></script>
 </head>
 
 <body>
@@ -117,9 +118,12 @@ String path = request.getContextPath();
 	      <tr>
 		      <td height="20" bgcolor="#FFFFFF"><div align="center" class="STYLE1">${role.id }</div></td>
 	          <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">${role.name }</span></div></td>
-	          <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE4">
+	          <td height="20" bgcolor="#FFFFFF">
+	          	<div align="center"><span class="STYLE4">
 	          
-	          	<a href="#" class="a1" onclick="javascript:del('role.do?method=del&id=${role.id }')" >删除</a>
+	          		<a href="#" class="a1" onclick="javascript:del('role.do?method=del&id=${role.id }')" >删除</a>
+	          	
+	          		<a href="#" onclick="javascript:acl_operate('${role.id }')" class="a1">角色授权</a>
 	          	</span></div>
 	          </td>
           </tr>
@@ -158,17 +162,17 @@ String path = request.getContextPath();
                 <tr>
                   
                   <pg:first>
-                  	<td width="40"><a href="${pageUrl}&method=orgList" id="firstpageurl"><img src="images/tab/first.gif" width="37" height="15" /></a>
+                  	<td width="40"><a href="${pageUrl}&method=roleList" id="firstpageurl"><img src="images/tab/first.gif" width="37" height="15" /></a>
                   	</td>
                   </pg:first>
                   <pg:prev>
-                  	<td width="45"><a href="${pageUrl }&method=orgList"><img src="images/tab/back.gif" width="43" height="15" /></a></td>
+                  	<td width="45"><a href="${pageUrl }&method=roleList"><img src="images/tab/back.gif" width="43" height="15" /></a></td>
                   </pg:prev>
                   <pg:next>
-                  <td width="45"><a href="${pageUrl }&method=orgList"><img src="images/tab/next.gif" width="43" height="15" /></a></td>
+                  <td width="45"><a href="${pageUrl }&method=roleList"><img src="images/tab/next.gif" width="43" height="15" /></a></td>
                   </pg:next>
                   <pg:last>
-                  <td width="40"><a href="${pageUrl }&method=orgList"><img src="images/tab/last.gif" width="37" height="15" /></a></td>
+                  <td width="40"><a href="${pageUrl }&method=roleList"><img src="images/tab/last.gif" width="37" height="15" /></a></td>
                   </pg:last>
                   <td width="100">
 	                  <div align="center">

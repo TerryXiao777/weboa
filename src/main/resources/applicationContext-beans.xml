@@ -33,11 +33,12 @@
 	<bean id="userManager" class="com.oa.manager.impl.UserManagerImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
-	<!--
+	
 	<bean id="aclManager" class="com.oa.manager.impl.AclManagerImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
 	
+	<!--
 	<bean id="initSystemDatas" class="com.oa.manager.impl.InitSystemDatasImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 		<property name="userManager" ref="userManager"></property>

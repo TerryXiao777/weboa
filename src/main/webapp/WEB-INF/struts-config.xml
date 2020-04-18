@@ -123,7 +123,7 @@
 			scope="request"
 			parameter="method"
 		>
-			<forward name="index" path="/acl/index.jsp"></forward>
+			<forward name="acl_operate" path="/jsp/acl/acl_operate.jsp"></forward>
 		</action>
 	</action-mappings>
     <message-resources parameter="MessageResources" />

@@ -61,7 +61,7 @@ a:active { text-decoration: none;}
 	            <table width="100%" border="0" cellspacing="0" cellpadding="0">
 	              <tr>
 	                <td width="18%">&nbsp;</td>
-	                <td width="82%" class="STYLE1">组织机构</td>
+	                <td width="82%" class="STYLE1">组织管理</td>
 	              </tr>
 	            </table>
             </td>

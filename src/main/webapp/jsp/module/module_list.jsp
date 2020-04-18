@@ -113,6 +113,12 @@ String path = request.getContextPath();
             <td width="18%" background="images/bg.gif" bgcolor="#FFFFFF">
             	<div align="center"><span class="STYLE1">父模块名称</span></div>
             </td>
+            <td width="18%" background="images/bg.gif" bgcolor="#FFFFFF">
+            	<div align="center"><span class="STYLE1">模块地址</span></div>
+            </td>
+            <td width="18%" background="images/bg.gif" bgcolor="#FFFFFF">
+            	<div align="center"><span class="STYLE1">排序号</span></div>
+            </td>
             <td width="15%" height="22" background="images/bg.gif" bgcolor="#FFFFFF" class="STYLE1"><div align="center">基本操作</div></td>
           </tr>
            <!-- 列表数据栏 -->
@@ -125,6 +131,8 @@ String path = request.getContextPath();
 	          </td>
 	          <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">${module.sn }</span></div></td>
 	          <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">${module.parent.name }</span></div></td>
+	          <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">${module.url }</span></div></td>
+	          <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE1">${module.orderNo }</span></div></td>
 	          <td height="20" bgcolor="#FFFFFF"><div align="center"><span class="STYLE4">
 	          	<a href="#" class="a1" onclick="javascript:del('module.do?method=del&id=${module.id}')" >删除</a></span></div>
 	          </td>
@@ -165,17 +173,17 @@ String path = request.getContextPath();
                 <tr>
                   
                   <pg:first>
-                  	<td width="40"><a href="${pageUrl}&method=orgList" id="firstpageurl"><img src="images/tab/first.gif" width="37" height="15" /></a>
+                  	<td width="40"><a href="${pageUrl}&method=moduleList" id="firstpageurl"><img src="images/tab/first.gif" width="37" height="15" /></a>
                   	</td>
                   </pg:first>
                   <pg:prev>
-                  	<td width="45"><a href="${pageUrl }&method=orgList"><img src="images/tab/back.gif" width="43" height="15" /></a></td>
+                  	<td width="45"><a href="${pageUrl }&method=moduleList"><img src="images/tab/back.gif" width="43" height="15" /></a></td>
                   </pg:prev>
                   <pg:next>
-                  <td width="45"><a href="${pageUrl }&method=orgList"><img src="images/tab/next.gif" width="43" height="15" /></a></td>
+                  <td width="45"><a href="${pageUrl }&method=moduleList"><img src="images/tab/next.gif" width="43" height="15" /></a></td>
                   </pg:next>
                   <pg:last>
-                  <td width="40"><a href="${pageUrl }&method=orgList"><img src="images/tab/last.gif" width="37" height="15" /></a></td>
+                  <td width="40"><a href="${pageUrl }&method=moduleList"><img src="images/tab/last.gif" width="37" height="15" /></a></td>
                   </pg:last>
                   <td width="100">
 	                  <div align="center">

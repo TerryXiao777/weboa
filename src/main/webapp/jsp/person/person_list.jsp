@@ -167,17 +167,17 @@ String path = request.getContextPath();
                 <tr>
                   
                   <pg:first>
-                  	<td width="40"><a href="${pageUrl}&method=orgList" id="firstpageurl"><img src="images/tab/first.gif" width="37" height="15" /></a>
+                  	<td width="40"><a href="${pageUrl}&method=personList" id="firstpageurl"><img src="images/tab/first.gif" width="37" height="15" /></a>
                   	</td>
                   </pg:first>
                   <pg:prev>
-                  	<td width="45"><a href="${pageUrl }&method=orgList"><img src="images/tab/back.gif" width="43" height="15" /></a></td>
+                  	<td width="45"><a href="${pageUrl }&method=personList"><img src="images/tab/back.gif" width="43" height="15" /></a></td>
                   </pg:prev>
                   <pg:next>
-                  <td width="45"><a href="${pageUrl }&method=orgList"><img src="images/tab/next.gif" width="43" height="15" /></a></td>
+                  <td width="45"><a href="${pageUrl }&method=personList"><img src="images/tab/next.gif" width="43" height="15" /></a></td>
                   </pg:next>
                   <pg:last>
-                  <td width="40"><a href="${pageUrl }&method=orgList"><img src="images/tab/last.gif" width="37" height="15" /></a></td>
+                  <td width="40"><a href="${pageUrl }&method=personList"><img src="images/tab/last.gif" width="37" height="15" /></a></td>
                   </pg:last>
                   <td width="100">
 	                  <div align="center">
