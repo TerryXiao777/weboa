@@ -36,4 +36,8 @@
  		<aop:pointcut id="allManagerMethod" expression="execution(* com.oa.manager.*.*(..))"/>
  		<aop:advisor advice-ref="txAdvice" pointcut-ref="allManagerMethod"/>
  	</aop:config>
+ 	
+ 	<bean id="jbpmConfiguration" class="org.springmodules.workflow.jbpm31.LocalJbpmConfigurationFactoryBean">
+		<property name="configuration" value="classpath:jbpm.cfg.xml"></property>
+	</bean>
  </beans>

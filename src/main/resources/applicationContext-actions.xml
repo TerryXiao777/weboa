@@ -12,7 +12,11 @@
 	     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
            http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
-	
+           
+	<bean name="/login" class="com.oa.web.actions.LoginAction" scope="prototype" >
+    	<property name="userManager" ref="userManager"></property>
+    </bean>
+    
 	<bean name="/index" class="com.oa.web.actions.IndexAction" scope="prototype"></bean>
 	<bean name="/org" class="com.oa.web.actions.OrgAction" scope="prototype">
 		<property name="orgManager" ref="orgManager"/>
@@ -41,5 +45,13 @@
     	<property name="moduleManager" ref="moduleManager"></property>
     	<property name="roleManager" ref="roleManager"></property>
     </bean>
+    
+    <bean name="/document" class="com.oa.web.actions.DocumentAction" scope="prototype">
+    	<property name="documentManager" ref="documentManager"></property>
+    	<property name="workflowManager" ref="workflowManager"></property>
+    </bean>
 	
+	<bean name="/workflow" class="com.oa.web.actions.WorkflowAction" scope="prototype" >
+    	<property name="workflowManager" ref="workflowManager"></property>
+    </bean>
 </beans>

@@ -14,4 +14,22 @@
     <function-class>com.oa.web.SecurityFunctions</function-class>
     <function-signature>boolean hasPermission(int, java.lang.String,int)</function-signature>
   </function>
+  
+  <function>
+    <name>form</name>
+    <function-class>com.oa.web.DynaFormFunction</function-class>
+    <function-signature>java.lang.String form(int)</function-signature>
+  </function>
+  
+  <function>
+    <name>holiday</name>
+    <function-class>com.oa.web.UtilFunction</function-class>
+    <function-signature>boolean isHoliday(int,int,int)</function-signature>
+  </function>
+  
+  <function>
+    <name>splitApply</name>
+    <function-class>com.oa.web.UtilFunction</function-class>
+    <function-signature>java.util.List splitApply(com.bjsxt.oa.model.MeetingRoomApply)</function-signature>
+  </function>
 </taglib>

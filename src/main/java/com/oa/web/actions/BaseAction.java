@@ -17,7 +17,7 @@ public class BaseAction extends DispatchAction{
 		//添加权限判断的代码
 		User user = currentUser(request);
 		if(user == null){
-			return mapping.findForward("login");
+			return mapping.findForward("loginPage");
 		}
 		
 		//继续父类的职责，即将请求分发到不同的方法中！

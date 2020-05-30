@@ -9,7 +9,6 @@ import org.apache.commons.beanutils.BeanUtils;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
-import org.apache.struts.actions.DispatchAction;
 
 import com.oa.manager.PersonManager;
 import com.oa.manager.RoleManager;
@@ -19,7 +18,7 @@ import com.oa.util.DateUtil;
 import com.oa.web.PagerModel;
 import com.oa.web.forms.UserActionForm;
 
-public class UserAction extends DispatchAction {
+public class UserAction extends BaseAction {
 	private PersonManager personManager;
 	private UserManager userManager;
 	private RoleManager roleManager;

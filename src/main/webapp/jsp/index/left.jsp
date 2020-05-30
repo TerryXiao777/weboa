@@ -52,6 +52,7 @@ a:active { text-decoration: none;}
   <tr>
     <td valign="top">
     <table width="151" border="0" align="center" cellpadding="0" cellspacing="0">
+      
       <tr>
         <td>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -78,7 +79,7 @@ a:active { text-decoration: none;}
                     <td width="84%" height="23">
 	                    <table width="95%" border="0" cellspacing="0" cellpadding="0">
 	                        <tr>
-	                          <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'">
+	                          <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; " onmouseout="this.style.borderStyle='none'">
 	                          	<a href="#" onclick="getIframe('org.do?method=orgList');">
 	                          	<span class="STYLE3">机构管理</span></a>
 	                          </td>
@@ -92,7 +93,7 @@ a:active { text-decoration: none;}
                     <td height="23">
 	                    <table width="95%" border="0" cellspacing="0" cellpadding="0">
 	                        <tr>
-	                          <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'">
+	                          <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; " onmouseout="this.style.borderStyle='none'">
 	                          	<a href="#" onclick="getIframe('person.do?method=personList');">
 	                          	<span class="STYLE3">人员管理</span></a>
 	                          </td>
@@ -202,7 +203,7 @@ a:active { text-decoration: none;}
 	            <table width="100%" border="0" cellspacing="0" cellpadding="0">
 	                <tr>
 	                  <td width="18%">&nbsp;</td>
-	                  <td width="82%" class="STYLE1">系统安全</td>
+	                  <td width="82%" class="STYLE1">公文管理</td>
 	                </tr>
 	            </table>
             </td>
@@ -219,12 +220,11 @@ a:active { text-decoration: none;}
                           <td width="84%" height="23">
                           <table width="95%" border="0" cellspacing="0" cellpadding="0">
                               <tr>
-                                <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; " 
-                                	onmouseout="this.style.borderStyle='none'">
-                                	<a href="#" onclick="getIframe('ami.do?method=amiListPage');">
-                                		<span class="STYLE3">附件类型</span>
+                                <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; " onmouseout="this.style.borderStyle='none'">
+                                	<a href="#" onclick="getIframe('document.do?method=documentList');">
+                                		<span class="STYLE3">公文维护</span>
                                 	</a>
-                                	</td>
+                                </td>
                               </tr>
                           </table>
                           </td>
@@ -236,7 +236,9 @@ a:active { text-decoration: none;}
                           <table width="95%" border="0" cellspacing="0" cellpadding="0">
                               <tr>
                                 <td height="20" style="cursor:hand" onmouseover="this.style.borderStyle='solid';this.style.borderWidth='1';borderColor='#7bc4d3'; "onmouseout="this.style.borderStyle='none'">
-                                	<span class="STYLE3">信息安全管理</span>
+                                	<a href="#" onclick="getIframe('workflow.do?method=workFlowList');">
+                                	<span class="STYLE3">流程管理</span>
+                                	</a>
                                 </td>
                               </tr>
                           </table>

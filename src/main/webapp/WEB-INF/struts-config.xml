@@ -11,6 +11,7 @@
 		<form-bean name="roleForm" type="com.oa.web.forms.RoleActionForm"></form-bean>
 		<form-bean name="userForm" type="com.oa.web.forms.UserActionForm"></form-bean>		
 		<form-bean name="aclForm" type="com.oa.web.forms.AclActionForm"></form-bean>
+		<form-bean name="documentForm" type="com.oa.web.forms.DocumentActionForm"></form-bean>
 	</form-beans>
 	<global-exceptions>
 		<exception 
@@ -27,9 +28,22 @@
 		<forward name="pub_add_success" path="/jsp/common/pub_add_success.jsp"></forward>
 		<forward name="pub_del_success" path="/jsp/common/pub_del_success.jsp"></forward>
 		<forward name="pub_update_success" path="/jsp/common/pub_update_success.jsp"></forward>
+		<forward name="loginPage" path="/login.do?method=loginPage" redirect="true"></forward>
 	</global-forwards>
 	
 	<action-mappings>
+	
+		<action 
+		    path="/login"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="userForm"
+			scope="request"
+			parameter="method">
+			
+			<forward name="loginPage" path="/jsp/login/login.jsp"></forward>
+			<forward name="index" path="/index.do"></forward>
+		</action>
+		
 		<action path="/index" type="com.oa.web.actions.IndexAction">
 			<forward path="/jsp/index/index.jsp" name="index"/>
 		</action>
@@ -54,6 +68,8 @@
 			<forward path="/jsp/index/welcome.jsp" name="welcome"/>
 		</action>
 		
+		
+		
 		<action 
 			path="/org"
 			type="org.springframework.web.struts.DelegatingActionProxy"
@@ -76,7 +92,7 @@
 		>
 			<forward name="person_list" path="/jsp/person/person_list.jsp"></forward>
 			<forward name="add_input" path="/jsp/person/add_input.jsp"></forward>
-			<forward name="update_input" path="/person/update_input.jsp"></forward>
+			<forward name="update_input" path="/jsp/person/update_input.jsp"></forward>
 		</action>
 		
 		<action 
@@ -125,6 +141,30 @@
 		>
 			<forward name="acl_operate" path="/jsp/acl/acl_operate.jsp"></forward>
 		</action>
+		
+		<action 
+			path="/document"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			name="documentForm"
+			scope="request"
+			parameter="method"
+		>
+			<forward name="document_list" path="/jsp/document/document_list.jsp"></forward>
+			<forward name="add_input" path="/jsp/document/add_input.jsp"></forward>
+			<forward name="select_flow" path="/jsp/document/select_flow.jsp"></forward>
+		</action>
+		
+		<action 
+			path="/workflow"
+			type="org.springframework.web.struts.DelegatingActionProxy"
+			parameter="method"
+			name="workflowForm"
+			scope="request"
+		>
+			<forward name="workflow_list" path="/jsp/workflow/workflow_list.jsp"></forward>
+		</action>
+		
+		
 	</action-mappings>
     <message-resources parameter="MessageResources" />
 </struts-config>

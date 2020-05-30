@@ -20,10 +20,13 @@ import com.oa.web.forms.UserActionForm;
 public class LoginAction extends DispatchAction{
 	private UserManager userManager;
 	
-	@Override
-	protected ActionForward unspecified(ActionMapping mapping, ActionForm form,
-			HttpServletRequest request, HttpServletResponse response)
-			throws Exception {
+	public ActionForward loginPage(ActionMapping mapping, ActionForm form, HttpServletRequest request,
+			HttpServletResponse response) throws Exception {
+		return mapping.findForward("loginPage");
+	}
+	
+	public ActionForward login(ActionMapping mapping, ActionForm form, HttpServletRequest request,
+			HttpServletResponse response) throws Exception {
 		UserActionForm uaf = (UserActionForm)form;
 		String username = uaf.getUsername();
 		String password = uaf.getPassword();
@@ -31,7 +34,7 @@ public class LoginAction extends DispatchAction{
 		if(user != null){
 			request.getSession().setAttribute("login", user);
 		}
-		return mapping.findForward("back_index");
+		return mapping.findForward("index");
 	}
 
 	public void setUserManager(UserManager userManager) {

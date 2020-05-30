@@ -17,7 +17,7 @@
 	<bean id="orgManager" class="com.oa.manager.impl.OrgManagerImpl">
 		<property name="sessionFactory" ref="sessionFactory"/>
 	</bean>    
-	<!-- 
+	 
 	<bean id="personManager" class="com.oa.manager.impl.PersonManagerImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
@@ -37,11 +37,23 @@
 	<bean id="userManager" class="com.oa.manager.impl.UserManagerImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 	</bean>
-	   
+	
+	
+	<!--
 	<bean id="initSystemDatas" class="com.oa.manager.impl.InitSystemDatasImpl">
 		<property name="sessionFactory" ref="sessionFactory"></property>
 		<property name="userManager" ref="userManager"></property>
 		<property name="orgManager" ref="orgManager"></property>
 	</bean>
 	-->
+	
+	<bean id="jbpmFacade" class="com.bjsxt.oa.manager.impl.JbpmFacadeImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		<property name="jbpmConfiguration" ref="jbpmConfiguration"></property>
+	</bean>
+	
+	<bean id="documentManager" class="com.bjsxt.oa.manager.impl.DocumentManagerImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		<property name="jbpmFacade" ref="jbpmFacade"></property>
+	</bean>
 </beans>

@@ -59,6 +59,19 @@ String path = request.getContextPath();
 				<input type="hidden" name="skipUrl" value="person.do?method=personList">
 		        <table width="100%" border="0" cellpadding="0" cellspacing="1">
 		          <tr>
+		          	<td class="STYLE6" width="10%">机构：</td>
+		          	<td width="15%">
+		          		<input type="hidden" id="orgIdId" name="orgId"/>
+		          		<input type="text" id="orgNameId" name="orgName" disabled="disabled"/>&nbsp;
+		          		<input type="button" name="selectOrgButton" value="机构选择" onclick="select_org();">
+		          		<span class="STYLE7"></span>
+		          	</td>
+		          	<td width="75%">
+		          		<div class="success" id="msg_succ" style="display: none"></div>
+		          		<div class="error" id="msg_error" style="display: none"></div>
+		          	</td>
+		          </tr>
+		          <tr>
 		          	<td class="STYLE6" width="10%">姓名：</td>
 		          	<td width="15%">
 		          		<input type="text" id="name" name="name" onblur="check();"/>&nbsp;
@@ -86,19 +99,6 @@ String path = request.getContextPath();
 		          	<td class="STYLE6" width="10%">年龄：</td>
 		          	<td width="15%">
 		          		<input type="text" id="age" name="age" onblur="check();"/>&nbsp;
-		          		<span class="STYLE7"></span>
-		          	</td>
-		          	<td width="75%">
-		          		<div class="success" id="msg_succ" style="display: none"></div>
-		          		<div class="error" id="msg_error" style="display: none"></div>
-		          	</td>
-		          </tr>
-		          <tr>
-		          	<td class="STYLE6" width="10%">机构：</td>
-		          	<td width="15%">
-		          		<input type="hidden" id="orgIdId" name="orgId"/>
-		          		<input type="text" id="orgNameId" name="orgName" disabled="disabled"/>&nbsp;
-		          		<input type="button" name="selectOrgButton" value="机构选择" onclick="select_org();">
 		          		<span class="STYLE7"></span>
 		          	</td>
 		          	<td width="75%">

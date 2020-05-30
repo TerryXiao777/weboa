@@ -45,4 +45,19 @@
 		<property name="orgManager" ref="orgManager"></property>
 	</bean>
 	-->
+	
+	<bean id="jbpmFacade" class="com.oa.manager.impl.JbpmFacadeImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		<property name="jbpmConfiguration" ref="jbpmConfiguration"></property>
+	</bean>
+	
+	<bean id="documentManager" class="com.oa.manager.impl.DocumentManagerImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		<property name="jbpmFacade" ref="jbpmFacade"></property>
+	</bean>
+	
+	<bean id="workflowManager" class="com.oa.manager.impl.WorkflowManagerImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+		<property name="jbpmFacade" ref="jbpmFacade"/>
+	</bean>
 </beans>

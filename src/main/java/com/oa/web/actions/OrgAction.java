@@ -7,7 +7,6 @@ import org.apache.commons.beanutils.BeanUtils;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
-import org.apache.struts.actions.DispatchAction;
 
 import com.oa.manager.OrgManager;
 import com.oa.model.Organization;
@@ -19,7 +18,7 @@ import com.oa.web.forms.OrgActionForm;
  * @author Administrator
  *
  */
-public class OrgAction extends DispatchAction{
+public class OrgAction extends BaseAction{
 	
 	private OrgManager orgManager;
 

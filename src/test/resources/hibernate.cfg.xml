@@ -17,5 +17,6 @@
     <mapping resource="com/oa/model/Role.hbm.xml"/>
     <mapping resource="com/oa/model/User.hbm.xml"/>
     <mapping resource="com/oa/model/UsersRoles.hbm.xml"/>
+    <mapping resource="com/oa/model/Document.hbm.xml"/>
   </session-factory>
 </hibernate-configuration>

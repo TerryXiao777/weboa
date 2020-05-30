@@ -7,13 +7,12 @@ import org.apache.commons.beanutils.BeanUtils;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
-import org.apache.struts.actions.DispatchAction;
 
 import com.oa.manager.RoleManager;
 import com.oa.model.Role;
 import com.oa.web.forms.RoleActionForm;
 
-public class RoleAction extends DispatchAction {
+public class RoleAction extends BaseAction {
 	private RoleManager roleManager;
 	
 	public ActionForward roleList(ActionMapping mapping, ActionForm form, HttpServletRequest request,

@@ -16,7 +16,7 @@
 	<bean name="/org" class="com.oa.web.actions.OrgAction" scope="prototype">
 		<property name="orgManager" ref="orgManager"/>
 	</bean>
-	<!--
+	
 	<bean name="/person" class="com.oa.web.actions.PersonAction" scope="prototype" >
 		<property name="personManager" ref="personManager"></property>
 	</bean>
@@ -36,5 +36,7 @@
     	<property name="moduleManager" ref="moduleManager"></property>
     	<property name="roleManager" ref="roleManager"></property>
     </bean>
-	-->
+	<bean name="/document" class="com.oa.web.actions.DocumentAction" scope="prototype">
+		<property name="documentManager" ref="documentManager"></property>
+	</bean>
 </beans>

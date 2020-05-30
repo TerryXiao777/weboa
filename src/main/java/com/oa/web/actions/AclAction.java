@@ -6,7 +6,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
-import org.apache.struts.actions.DispatchAction;
 
 import com.oa.exception.SystemException;
 import com.oa.manager.ModuleManager;
@@ -17,7 +16,7 @@ import com.oa.web.PagerModel;
 import com.oa.web.SystemContext;
 import com.oa.web.forms.AclActionForm;
 
-public class AclAction extends DispatchAction{
+public class AclAction extends BaseAction{
 	private ModuleManager moduleManager;
 	private RoleManager roleManager;
 	private UserManager userManager;

@@ -82,7 +82,7 @@ public class UserManagerImpl extends AbstractManager implements UserManager{
 	@Override
 	public User login(String username, String password) {
 		User user = (User)getSession()
-				.createQuery("select u from com.bjsxt.oa.model.User u where u.username = ?")
+				.createQuery("select u from com.oa.model.User u where u.username = ?")
 				.setParameter(0, username)
 				.uniqueResult();
 			

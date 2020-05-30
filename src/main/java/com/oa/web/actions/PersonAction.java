@@ -7,7 +7,6 @@ import org.apache.commons.beanutils.BeanUtils;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
-import org.apache.struts.actions.DispatchAction;
 
 import com.oa.manager.PersonManager;
 import com.oa.model.Person;
@@ -18,7 +17,7 @@ import com.oa.web.forms.PersonActionForm;
  * @author Administrator
  *
  */
-public class PersonAction extends DispatchAction{
+public class PersonAction extends BaseAction{
 	private PersonManager personManager;
 	
 	public ActionForward personList(ActionMapping mapping, ActionForm form, HttpServletRequest request,
@@ -80,7 +79,7 @@ public class PersonAction extends DispatchAction{
 		Person person = new Person();
 		BeanUtils.copyProperties(person, paf);
 		personManager.updatePerson(person, paf.getOrgId());
-		
+		request.setAttribute("skipUrl",paf.getSkipUrl());
 		return mapping.findForward("pub_update_success");
 	}
 	

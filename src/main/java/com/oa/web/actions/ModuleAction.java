@@ -7,13 +7,12 @@ import org.apache.commons.beanutils.BeanUtils;
 import org.apache.struts.action.ActionForm;
 import org.apache.struts.action.ActionForward;
 import org.apache.struts.action.ActionMapping;
-import org.apache.struts.actions.DispatchAction;
 
 import com.oa.manager.ModuleManager;
 import com.oa.model.Module;
 import com.oa.web.forms.ModuleActionForm;
 
-public class ModuleAction extends DispatchAction{
+public class ModuleAction extends BaseAction{
 	private ModuleManager moduleManager;
 	
 	public ActionForward moduleList(ActionMapping mapping, ActionForm form, HttpServletRequest request,
